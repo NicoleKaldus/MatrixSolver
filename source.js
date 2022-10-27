@@ -21,19 +21,21 @@ function showMatrix(){
     // const element = document.getElementById("div1");
     // element.appendChild(para)
 
-    function insertMatrix(){
-        for(let i = 0; i < mat.getRows(); ++i){
-            console.log(i)
-            document.getElementById("set-matrix-values").innerHTML = 
-            '<div class="message">Add Message<br>Title: <input type="text" id="title"><br>Text: <input type="text" id="message"><br><br></div>';
-        }
-        
-    };
-    insertMatrix()
+    
+    insertMatrix(mat)
 
 
     
 }
+
+function insertMatrix(mat){
+    for(let i = 0; i < mat.getRows(); ++i){
+        console.log(i)
+        document.getElementById("set-matrix-values").innerHTML = 
+        '<div class="message">Add Message<br>Title: <input type="text" id="title"><br>Text: <input type="text" id="message"><br><br></div>';
+    }
+    
+};
 
 
 
