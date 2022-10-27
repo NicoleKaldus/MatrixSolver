@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Matrix Solver</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="source.js"></script>
+    </head>
+    <body>
+        <div class = "header">
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+        <main class = "flexbox-container">
+            <div class = "flexbox-item menu">
+                <h1 style="text-align: center;">MENU</h1><br>
+                <nav style="list-style-type: none; text-align: center;">
+                    <a class="menu-link" href="reduce.html">Reduce</a> <br> <br><br>
+                    <a class="menu-link" href="reduce.html">Ax=b</a><br><br><br>
+                    <a class="menu-link" href="reduce.html">Multiply Matrices</a><br><br><br>
+                    <a class="menu-link" href="reduce.html">Inverse Matrices</a>
+                </nav>
+
+            </div>
+            <div class = "flexbox-item content">
+                <h1>MATRIX ROW REDUCTION</h1>
+                What dimentions does your matrix have (rows x cols)?
+                <br><br>
+                <form id="set-matrix-size">
+                    
+                    <input type="number" id="rows" name="quantity" min="1" value = "1"> X 
+
+                    <input type="number" id="cols" name="quantity" min="1" value = "1">
+                </form><br>
+                <button  onclick="showMatrix()">Submit</button>
+                
+            </div>
+        </main>
+        <form  id="set-matrix-values"></form>
+
+    </body>
+   
+</html>
